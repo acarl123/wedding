@@ -34,6 +34,10 @@
     	text-align: center;
     }
 
+    .stroke {
+    	border: 3px black dashed;
+    }
+
     </style>
   </head>
 <!-- NAVBAR
@@ -58,7 +62,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="about.html">About</a></li>
                 <li><a href="accomodations.html">Accommodations</a></li>
-                <li><a href="rsvp.html">RSVP</a></li>
+                <li><a href="http://fontandrew.rsvpify.com" target="_blank">RSVP</a></li>
                 <li><a href="registry.html">Registry</a></li>
               </ul>
             </div>
@@ -72,20 +76,8 @@
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>About:</h1>
-              <p>The Wedding Ceremony will be held at Maysville's Historical Courthouse on May 14th, 2016 at 1:00 PM.</p>
-              <p>A Reception will follow after the ceremony at the Maysville Conference Center where food will be served.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="space">
+
     </div><!-- /.carousel -->
 
 
@@ -141,11 +133,12 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Ceremony: <span class="text-muted">Maysville's Historical Courthouse</span></h2>
+          <p class="lead">The Wedding Ceremony will take place at Maysville's historical courthouse at 1:00 PM.</p>
+          <p class="lead">27 West 3rd St.<br/>Maysville, KY 41056</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="images\courthouse.jpg" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -153,38 +146,37 @@
 
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Reception: <span class="text-muted">Maysville Conference Center</span></h2>
+          <p class="lead">The Reception will be held at the Maysville Conference. Appetizers will be served after the ceremony. A mid-afternoon lunch will be served at 2:30 PM, catered by Chandler's. There will be a cash bar available.</p>
+          <p class="lead">24 East 2nd St<br/>Maysville, KY 41056</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="images/conferencecenter.jpg" alt="Generic placeholder image">
         </div>
       </div>
 
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      	<div class="col-md-2"></div>
+      	<div class="col-md-8">
+          <img class="featurette-image img-responsive center-block stroke" src="images/map.jpg" alt="Generic placeholder image">
         </div>
       </div>
 
-      <hr class="featurette-divider">
+      <div class="row featurette"> 
+          <h2 class="featurette-heading">Walking Directions: <span class="text-muted">From the Court House to the Conference Center</span></h2>
+          	<ol class="lead">
+          		<li>After exiting the building, you will want to head toward your left.</li>
+          		<li>Walk straight until you get to Market Street (The street that has the brick pavement and a fountain)</li>
+          		<li>Turn left on Market Street.</li>
+          		<li>Turn Right on 2nd Street</li>
+          		<li>Walk straight until you see flags that say "Conference Center". Congrats! you've made it to the Reception!</li>
+          	</ol>
+          <p class="lead">The Conference Center is right across from the French Quarter Inn, if that's where you're staying that evening.</p>
+      </div>
 
       <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-
-    </div><!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript

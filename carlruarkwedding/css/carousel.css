@@ -37,6 +37,10 @@ body {
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
+.space{
+  height: 120px;
+}
+
 /* Carousel base class */
 .carousel {
   height: 500px;
@@ -52,6 +56,82 @@ body {
   height: 500px;
   background-color: #777;
 }
+
+/* ///////////////////////////////////// */
+/* Feel free to take all of this business
+   out when you know what's shakin'!
+   — Lauren Woodrick */
+/* ///////////////////////////////////// */
+
+/*
+
+Image tags behave... in a pretty interesting way. And I'm pretty
+sure that it takes a little bit of JavaScript magic to make it behave
+optimally. We're not here for that, though — not when there's a CSS solution!
+
+We'll lead off by making special classes to add to each of the carousel item divs
+that will use the photo you originally placed in each one as a background-image.
+The magic, however, happens with background-size: cover; which results in the
+background-image scaling up an image so that its smallest dimension fills the container.
+
+Also, since most of these photos are framed with you and your fiancé in the center,
+background-position is set to 50% 50% to fix it in the center.
+*/
+
+.item--1 {
+  background-image: url(../images/img01.jpg);
+  background-size: cover;
+  background-position: 50% 0%;
+}
+
+.item--2 {
+  background-image: url(../images/img02.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.item--3 {
+  background-image: url(../images/img03.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/*
+"But wait, one of these images has us off to the side and I'm getting cut off!"
+Yes. Yes indeed. This is where media queries can be brought in to make it all happy.
+
+Scooted over the photo a bit so that you don't get clipped
+*/
+
+@media(max-width: 1100px) {
+  .item--1 {
+    background-position: 80% 50%;
+  }
+}
+
+/*
+The composition gets really, really weird when you hit mobile-y sizes, so if you
+adjust your carousel height and item height, things start feeling cozier again.
+*/
+
+@media(max-width: 768px) {
+  .carousel, .carousel .item {
+    height: 320px;
+  }
+
+  .item--1 {
+    background-position: 80% 50px;
+  }
+
+  .item--2 {
+    background-position: 50% 50px;
+  }
+}
+
+/* ///////////////////////////////////// */
+/* End comments! Happy coding! */
+/* ///////////////////////////////////// */
+
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
 /*  position: absolute;
