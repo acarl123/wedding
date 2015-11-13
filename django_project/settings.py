@@ -57,7 +57,7 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'django',
         'USER': 'django',
         'PASSWORD': 'ykHXRfm7si',
@@ -83,4 +83,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
+PROJECT_DIR = os.path.dirname(__file__)
+STATIC_ROOT = ''
+
 STATIC_URL = '/static/'
+
+TEMPLATE_DIRS = (os.path.join(BASE_DIR, "templates"),)
+STATICFILES_DIRS = (os.path.join('static'),)
